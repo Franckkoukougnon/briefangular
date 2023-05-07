@@ -2,7 +2,33 @@
   margin: 82px auto 32px;
   padding: 0 16px;
   max-width: 960px;
+  display: flex;
+  flex-direction: column;
+
+ 
 }
+
+.enfant_1 {
+    display: flex;
+      justify-content: center;
+      justify-content: space-evenly;
+}
+
+   .enfant_2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .enfant_3 {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .enfant_4 {
+    display: flex;
+    align-items:center ;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 
 svg#clouds {
   position: fixed;
