@@ -5,13 +5,15 @@
       <span>Brief Angular</span>
     </mat-toolbar>
     <!-- Modifier le code ci-dessous -->
-    <div class="content d-flex">
+    <div class="content d-flex"  >
       <!-- Ces éléments sont affichés sur la même ligne -->
-      <app-pokemon-list></app-pokemon-list>
-    
-     
-      <!-- Ces éléments sont affichés l'un en dessous de l'autre -->
-      
+      <div class="container_1">
+        <app-pokemon-list [pokemonAvatar]="pokemonList"  (deletePokemonEven)="deletePokemons($event)"></app-pokemon-list>
+      </div>
+      <div class="container_2">
+        <app-pokemon-details></app-pokemon-details>    
+      </div>       
+      <!-- Ces éléments sont affichés l'un en dessous de l'autre --> 
     </div>
 
     <!-- Footer -->

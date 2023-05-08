@@ -4,16 +4,28 @@
   max-width: 960px;
   display: flex;
   flex-direction: column;
-
  
+ 
+
+  .container_1 {
+    display: flex;
+     justify-content: space-between;
+    align-items: center;
+    margin: 32px;
+  }
+
+  .container_2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 32px;
+  }
+
 }
 
 
 
-   .enfant_2 {
-    display: flex;
-    justify-content: center;
-  }
+ 
 
   .enfant_3 {
     display: flex;

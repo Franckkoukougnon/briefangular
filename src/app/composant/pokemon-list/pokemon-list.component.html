@@ -1,7 +1,8 @@
-<div class="enfant_1"  >
-        <mat-card *ngFor="let pokemon of pokemonList">
+<div class="enfant_1" *ngIf="pokemonAvatar.length > 2" >
+        <mat-card *ngFor="let pokemon of pokemonAvatar">
            <mat-card-content>{{pokemon.name}}</mat-card-content>
            <mat-card-content>{{pokemon.type}}</mat-card-content>
-           <mat-card-content>{{pokemon.shortDescription}}</mat-card-content>                                   
+           <mat-card-content>{{pokemon.shortDescription}}</mat-card-content>  
+           <button type="button" class="btn btn-primary" (click)="deletePokemons(pokemon.id)">Supprimer</button>                                 
         </mat-card>
 </div>

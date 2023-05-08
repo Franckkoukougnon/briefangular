@@ -10,13 +10,15 @@ import {MatCardModule} from '@angular/material/card';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { PokemonListComponent } from './composant/pokemon-list/pokemon-list.component';
+import { PokemonDetailsComponent } from './composant/pokemon-details/pokemon-details.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PokemonListComponent
+    PokemonListComponent,
+    PokemonDetailsComponent
   ],
   imports: [
     BrowserModule,
