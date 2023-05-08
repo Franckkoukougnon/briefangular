@@ -35,5 +35,18 @@ export class AppComponent {
       longDescription:
         "Manimal is a Varan-type Pokémon that is known for its ability to breathe fire. It has large wings that allow it to fly and it is very strong in battle.",
     },
+    {
+      id: 4,
+      name: "Manimal",
+      type: "Varan",
+      shortDescription: "A large, Black, powerful Pokémon",
+      image: "./assets/images/Charizard.png",
+      longDescription:
+        "Manimal is a Varan-type Pokémon that is known for its ability to breathe fire. It has large wings that allow it to fly and it is very strong in battle.",
+    },
   ];
+
+  deletePokemons(id: number) {
+    this.pokemonList = this.pokemonList.filter((pokemon) => pokemon.id !== id);
+  }
 }

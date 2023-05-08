@@ -1,4 +1,4 @@
-import { Component, Input } from "@angular/core";
+import { Component, EventEmitter, Input, Output } from "@angular/core";
 import { Pokemon } from "src/app/models/Pokemon";
 
 @Component({
@@ -8,7 +8,9 @@ import { Pokemon } from "src/app/models/Pokemon";
 })
 export class PokemonListComponent {
   @Input() pokemonAvatar: Pokemon[] = [];
-  onDelect(pokemon: Pokemon) {
-    this.pokemonAvatar = this.pokemonAvatar.filter((p) => p.id !== pokemon.id);
+  @Output() deletePokemonEven = new EventEmitter<number>();
+
+  deletePokemons(id: number) {
+    this.deletePokemonEven.emit(id);
   }
 }
