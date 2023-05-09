@@ -1,5 +1,9 @@
- <div  class="enfant_2" >
+ <div  class="enfant_2" *ngIf="selectedPokemon "  >
         <mat-card>
           <mat-card-content>Pokemon details</mat-card-content>
+          <mat-card-content>nom: {{selectedPokemon.name}}</mat-card-content>
+          <mat-card-content>Type: {{selectedPokemon.type}}</mat-card-content>
+          <mat-card-content>Short Description: {{selectedPokemon.shortDescription}}</mat-card-content>
+          <mat-card-content>Long Description: {{selectedPokemon.longDescription}}</mat-card-content>
         </mat-card>
       </div>

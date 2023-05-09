@@ -8,10 +8,10 @@
     <div class="content d-flex"  >
       <!-- Ces éléments sont affichés sur la même ligne -->
       <div class="container_1">
-        <app-pokemon-list [pokemonAvatar]="pokemonList"  (deletePokemonEven)="deletePokemons($event)"></app-pokemon-list>
+        <app-pokemon-list [pokemonAvatar]="pokemonList"  (deletePokemonEven)="deletePokemons($event)" (montrerPokemonEven)="ShowPokemonDetails($event)"></app-pokemon-list>
       </div>
       <div class="container_2">
-        <app-pokemon-details></app-pokemon-details>    
+        <app-pokemon-details [selectedPokemon]="details" ></app-pokemon-details>    
       </div>       
       <!-- Ces éléments sont affichés l'un en dessous de l'autre --> 
     </div>

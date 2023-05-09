@@ -7,6 +7,7 @@ import { Pokemon } from "./models/Pokemon";
   styleUrls: ["./app.component.scss"],
 })
 export class AppComponent {
+  details!: Pokemon;
   pokemonList: Pokemon[] = [
     {
       id: 1,
@@ -48,5 +49,10 @@ export class AppComponent {
 
   deletePokemons(id: number) {
     this.pokemonList = this.pokemonList.filter((pokemon) => pokemon.id !== id);
+  }
+
+  ShowPokemonDetails(pokemon: Pokemon){
+    console.log("2");
+    this.details = pokemon;
   }
 }

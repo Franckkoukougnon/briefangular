@@ -9,8 +9,13 @@ import { Pokemon } from "src/app/models/Pokemon";
 export class PokemonListComponent {
   @Input() pokemonAvatar: Pokemon[] = [];
   @Output() deletePokemonEven = new EventEmitter<number>();
+  @Output() montrerPokemonEven = new EventEmitter<Pokemon>();
 
   deletePokemons(id: number) {
     this.deletePokemonEven.emit(id);
+  }
+
+  montrerPokemons(pokemon: Pokemon){
+    this.montrerPokemonEven.emit(pokemon)
   }
 }
